@@ -1,0 +1,1 @@
+const gsd = (a, b) => a % b === 0 ? b : gsd(b, a % b)
