@@ -1,1 +1,0 @@
-const fibb = n => n <= 1 ? n : fibb(n - 2) + fibb(n - 1)
