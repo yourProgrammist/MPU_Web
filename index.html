@@ -1,76 +1,144 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="print.css" media="print">
-    <title>Дeнь Космонавтики</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+<!-- Подключаем стили для подсветки кода: -->
+<link href="google-code-prettify/prettify.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7ae22687d7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="sidebar">
-        <a href="index.html">Исторические факты</a>
-        <a href="astronauts.html">Отечественные космонавты</a>
-        <a href="future_space.html">Будущее космоса</a>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top header-blur">
+            <div class="container-fluid ">
+                <a class="navbar-brand" href="#">
+                    <img src="images/sitelogo-nmap.svg" alt="logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Для кого</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Что умеет сервис</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Ресурсы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <h1 class="hello-message text-center font-monospace lh-sm">NMAP<br>Сканирование IP-сетей
+        </h1>
+        <h2 class="text-center font-monospace mt-5 fs-5">Утилита с открытым исходным кодом для исследования сети и проверки безопасности.</h2>
+        <img src="images/nmap.png" class="img-fluid mx-auto d-block mt-5" alt="...">
+        <h3 class="scan-wb lh-1">Сканирование<span class="grc"><br>больших сетей</span></h3>
+        <div class="fs-5 mt-5"> Nmap использует "сырые" IP пакеты оригинальным способом, чтобы определить какие хосты доступны в сети, какие службы (название приложения и версию) они предлагают, какие операционные системы (и версии ОС) они используют, какие типы пакетных фильтров/брандмауэров используются и еще множество других характеристик. 
+        </div>
+        <div class="for-who fw-semibold">Для кого</div>
+        <div class="new-or-old fw-semibold lh-1"><span class="grc">Пентестер или интересуешься<br>информационной безопасностью?</span> Тебе будет
+            <br>актуально
+        </div>
+        <div class="lists">
+            <div class="litem d-flex mt-5 align-items-center">
+                <ul class="list-group list">
+                    <li class="list-group-item list-group-item-title fw-semibold">Сканер с минимальным уровнем порога знаний
+                    </li>
+                    <li class="list-group-item d-flex flex-row"><i class="fa-solid fa-check me-2 mt-1"
+                            style="color: #05ca00;"></i>
+                        <div>Наиболее простой синтаксис среди аналогов <pre class="prettyprint">nmap [ <Тип сканирования> ...] [ <Опции> ] { <цель сканирования> }
+                        </pre></div>
+                        
+                    </li>
+                    <li class="list-group-item d-flex flex-row"><i class="fa-solid fa-check me-2 mt-1"
+                            style="color: #05ca00;"></i>
+                        <div>Большое количество флагов для самых разных целей</div>
+                    </li>
+                    <li class="list-group-item d-flex flex-row"><i class="fa-solid fa-check me-2 mt-1"
+                            style="color: #05ca00;"></i>
+                        <div>Nmap поддерживает множество различных типов сканирования, включая сканирование TCP/UDP, обнаружение версий сервисов, сканирование операционных систем и даже скриптовые проверки безопасности.</div>
+                    </li>
+                    <li class="list-group-item d-flex flex-row"><i class="fa-solid fa-check me-2 mt-1"
+                            style="color: #05ca00;"></i>
+                        <div>Nmap способен обнаруживать активные устройства в сети, их IP-адреса, используемые ими сервисы и открытые порты, что делает его незаменимым инструментом для администраторов сетей и специалистов по информационной безопасности.</div>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="litem d-flex mt-5 align-items-center">
+            <ul class="list-group list mt-5">
+                <li class="list-group-item list-group-item-title fw-semibold">Преимущества nmap перед аналогами</li>
+                <li class="list-group-item d-flex flex-row"><i class="fa-solid fa-check me-2 mt-1"
+                        style="color: #05ca00;"></i>
+                    <div>Nmap доступен на множестве операционных систем, включая Windows, Linux и macOS, что делает его доступным для широкого круга пользователей;<div>
+                </li>
+                <li class="list-group-item d-flex flex-row"><i class="fa-solid fa-check me-2 mt-1"
+                        style="color: #05ca00;"></i>
+                    <div>Nmap имеет систему скриптов на языке Lua, которая позволяет пользователям создавать свои собственные скрипты для автоматизации задач и проведения более сложных проверок безопасности;</div>
+                </li>
+                <li class="list-group-item d-flex flex-row"><i class="fa-solid fa-check me-2 mt-1"
+                        style="color: #05ca00;"></i>
+                    <div>У Nmap есть обширная документация, а также большое и активное сообщество пользователей и разработчиков, которые могут предложить поддержку и руководство;</div>
+                </li>
+                <li class="list-group-item d-flex flex-row"><i class="fa-solid fa-check me-2 mt-1"
+                        style="color: #05ca00;"></i>
+                    <div>Nmap является бесплатным и открытым, что позволяет пользователям изучать его исходный код и адаптировать инструмент под свои нужды</div>
+                </li>
+            </ul>
+        </div>
     </div>
-    <main class="container d-flex direction-column">
-
-        <div class="page-content">
-            <h1 class="events">Исторические факты</h1>
-            <div class="events-list">
-                <p>
-                <div class="event">
-                    <div class="product-image">
-                        <img src="images/moon_1.jpg" alt="moon_1">
-                    </div>
-                    <div class="product-details">
-                        <header>Первый искусственный спутник Солнца</header>
-                        <p class="information">Автоматическая межпланетная станция «Луна-1» была запущена 2 января 1959 года. Она должна была достигнуть поверхности Луны и доставить туда металлический герб СССР, призванный показать превосходство советской науки. Однако в расчёты учёных закралась ошибка, из-за которой космический аппарат промахнулся мимо Луны и вышел на гелиоцентрическую орбиту, став тем самым первым искусственным спутником Солнца.</p>
-                    </div>
+    </div>
+    <footer class="footer mt-5 p-3">
+        <h3 class="text-center mb-5">Свяжитесь с нами</h3>
+        <div class="footer-container d-flex justify-content-center">
+            <form class="me-5">
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Имя">
                 </div>
-                </p>
-                <p>
-                    <div class="event">
-                        <div class="product-image">
-                            <img src="images/back_monn.jpg" alt="event2">
-                        </div>
-                        <div class="product-details">
-                            <header>Первая фотография обратной стороны Луны</header>
-                            <p class="information">Космический аппарат «Луна-3» был запущен 4 октября 1959 года ракетой-носителем «Восток-Л» и впервые в мире сфотографировал невидимую с Земли сторону Луны. Интересно, что для достижения Луны впервые был использован гравитационный манёвр, то есть разгон космического аппарата под действием гравитационных полей небесных тел.
-                                В этом же полёте была опробована новая система ориентации, позволившая решить задачу управления аппаратами в космическом пространстве. Она включала в себя солнечные и лунные световые сенсоры, гироскопические сенсоры углового вращения.
-                            </p>
-                        </div>
-                    </div>
-                </p>
-
-                <div class="event">
-                    <div class="product-image">
-                        <img src="images/venera.jpeg" alt="event3">
-                    </div>
-                    <div class="product-details">
-                        <header>Первая успешная посадка на другой планете</header>
-                        <p class="information">Аппарат «Венера-7» был запущен с космодрома Байконур 17 августа 1970 года. Целью запуска была доставка спускаемого аппарата на поверхность Венеры. 15 декабря 1970 года, через 120 суток после старта, станция «Венера-7» достигла окрестностей планеты. Вскоре спускаемый аппарат станции «Венера-7» совершил посадку на поверхности Венеры, став таким образом первым устройством, совершившим успешную посадку на другой планете.</p>
-                    </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
                 </div>
-        
-                
+                <div class="mb-3">
+                    <textarea name="" id="" cols="40" rows="5" placeholder="Текст обращения"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <div class="footer-links container m-0">
+                <div class="row row-cols-3">
+                    <a class="col"><i class="fa-brands fa-telegram col"></i></a>
+                    <a class="col"><i class="fa-brands fa-vk col"></i></a>
+                    <a class="col"><i class="fa-brands fa-google-plus-g col"></i></a>
+                </div>
             </div>
         </div>
-        <button class="scroll-to-top-btn">
-            &#9650;
-        </button>
-
-
-    </main>
-    <footer class="footer">
-        <div class="container">
-            &copy; 2023 День Космонавтики
-        </div>
     </footer>
-
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
